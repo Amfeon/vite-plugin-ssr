@@ -26,6 +26,9 @@ function buildConfig(): Plugin {
           // @ts-ignore
           polyfillDynamicImport: false,
         },
+        legacy: {
+          buildRollupPluginCommonjs: true,
+        },
         //*
         // @ts-ignore
         ssr: { external: ['vite-plugin-ssr'] },
